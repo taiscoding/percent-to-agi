@@ -1,0 +1,56 @@
+{
+  "index.js -> ../src/components-js/AGIPercentage": {
+    "id": "index.js -> ../src/components-js/AGIPercentage",
+    "files": [
+      "static/chunks/src_components-js_AGIPercentage_js.js"
+    ]
+  },
+  "index.js -> ../src/components-js/AdminDashboard": {
+    "id": "index.js -> ../src/components-js/AdminDashboard",
+    "files": [
+      "static/chunks/src_components-js_AdminDashboard_js.js"
+    ]
+  },
+  "index.js -> ../src/components-js/DashboardVisualizations": {
+    "id": "index.js -> ../src/components-js/DashboardVisualizations",
+    "files": [
+      "static/chunks/src_components-js_DashboardVisualizations_js.js"
+    ]
+  },
+  "index.js -> ../src/components-js/EnhancedNewsAggregator": {
+    "id": "index.js -> ../src/components-js/EnhancedNewsAggregator",
+    "files": [
+      "static/chunks/src_components-js_EnhancedNewsAggregator_js.js"
+    ]
+  },
+  "index.js -> ../src/components-js/ExpertOpinions": {
+    "id": "index.js -> ../src/components-js/ExpertOpinions",
+    "files": [
+      "static/chunks/src_components-js_ExpertOpinions_js.js"
+    ]
+  },
+  "index.js -> ../src/components-js/Methodology": {
+    "id": "index.js -> ../src/components-js/Methodology",
+    "files": [
+      "static/chunks/src_components-js_Methodology_js.js"
+    ]
+  },
+  "index.js -> ../src/components-js/MethodologyExplanation": {
+    "id": "index.js -> ../src/components-js/MethodologyExplanation",
+    "files": [
+      "static/chunks/src_components-js_MethodologyExplanation_js.js"
+    ]
+  },
+  "index.js -> ../src/components-js/SocialSharing": {
+    "id": "index.js -> ../src/components-js/SocialSharing",
+    "files": [
+      "static/chunks/src_components-js_SocialSharing_js.js"
+    ]
+  },
+  "index.js -> ../src/components-js/UserAuth": {
+    "id": "index.js -> ../src/components-js/UserAuth",
+    "files": [
+      "static/chunks/src_components-js_UserAuth_js.js"
+    ]
+  }
+}
