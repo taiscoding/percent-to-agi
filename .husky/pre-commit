@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Check for potential API keys and secrets
+npm run detect-secrets || exit 1

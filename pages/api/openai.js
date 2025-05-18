@@ -22,9 +22,9 @@ export default async function handler(req, res) {
 
   try {
     // Check if we have a valid API key
-    if (!configuration.apiKey) {
+    if (!process.env.OPENAI_API_KEY) {
       return res.status(500).json({
-        error: 'OpenAI API key not configured. Please set OPENAI_API_KEY environment variable.',
+        error: 'OpenAI API key is missing. Please check your environment variables.',
       });
     }
 

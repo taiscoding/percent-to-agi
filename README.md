@@ -19,11 +19,33 @@ A React-based web application that tracks humanity's progress toward Artificial 
    ```
    npm install
    ```
-3. Run the development server:
+3. Set up environment variables:
+   - Copy `.env.example` to a new file called `.env.local`
+   - Fill in your API keys (see "Environment Variables" section below)
+4. Run the development server:
    ```
    npm run dev
    ```
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Environment Variables
+
+This project requires several API keys to function properly. Never commit these keys to version control.
+
+### Required API Keys:
+
+1. **OpenAI API Key** - Used for AI analysis of research papers and news
+   - Sign up at [OpenAI Platform](https://platform.openai.com/signup)
+   - Set as `OPENAI_API_KEY` in your `.env.local` file
+
+2. **Firebase** - Used for authentication and database
+   - Create a project at [Firebase Console](https://console.firebase.google.com/)
+   - Add a web app to your project to get configuration details
+   - Set the Firebase variables in your `.env.local` file
+
+3. **News API Key** - Used to fetch AI news
+   - Sign up at [News API](https://newsapi.org/register)
+   - Set as `NEXT_PUBLIC_NEWS_API_KEY` in your `.env.local` file
 
 ## Technology Stack
 

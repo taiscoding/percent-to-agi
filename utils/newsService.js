@@ -2,7 +2,7 @@ import NewsAPI from 'newsapi';
 import { format, subDays } from 'date-fns';
 
 // Initialize NewsAPI with your API key
-const newsapi = new NewsAPI(process.env.NEXT_PUBLIC_NEWS_API_KEY);
+const newsapi = process.env.NEXT_PUBLIC_NEWS_API_KEY ? new NewsAPI(process.env.NEXT_PUBLIC_NEWS_API_KEY) : null;
 
 /**
  * Fetch recent AI-related news articles
@@ -12,6 +12,17 @@ const newsapi = new NewsAPI(process.env.NEXT_PUBLIC_NEWS_API_KEY);
  */
 export const fetchAINews = async (days = 30, pageSize = 10) => {
   try {
+    // Check if News API key is configured
+    if (!process.env.NEXT_PUBLIC_NEWS_API_KEY) {
+      console.warn('News API key is missing. Returning mock data.');
+      return { 
+        success: true, 
+        articles: getMockNewsArticles(),
+        totalResults: getMockNewsArticles().length,
+        isMock: true
+      };
+    }
+
     const today = new Date();
     const fromDate = subDays(today, days);
     
